@@ -1,26 +1,58 @@
-/* Reset default margins and paddings */
+/* Reset margin and padding */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
-/* Apply your background image */
+/* Apply background image */
 body {
     background: url('images/Peace.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     color: white;
+    text-align: center;
 }
 
-/* Style your central content area */
+/* Logo in the top-left corner */
+.logo img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px; /* Adjust size as needed */
+}
+
+/* Social buttons in top-right */
+.social-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-buttons a {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Main content styling */
 .content {
-    background: rgba(0, 0, 0, 0.5); /* Slightly dark overlay */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
