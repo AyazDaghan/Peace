@@ -72,13 +72,14 @@ body::before {
     transition: 0.3s;
 }
 
-/* Adjusting all icons to same size */
+/* Force all social media icons to be the same small size */
 .social-buttons img {
-    width: 24px;
-    height: 24px;
+    width: 20px !important; /* Forces smaller size */
+    height: 20px !important;
     object-fit: contain;
     margin-right: 5px;
 }
+
 
 /* Hover effect for better UX */
 .social-buttons a:hover {
