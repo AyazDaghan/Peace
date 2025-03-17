@@ -6,7 +6,7 @@ body, html {
     width: 100%;
 }
 
-/* Apply background image */
+/* Background Fix - Removing extra shadow */
 body {
     background: url('images/Peace.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -15,36 +15,58 @@ body {
     text-align: center;
 }
 
-/* Logo in the top-left corner */
-.logo img {
+/* Logo Positioning */
+.logo {
     position: absolute;
     top: 20px;
-    left: 20px;
-    width: 60px; /* Adjust size as needed */
+    left: 80px;  /* Moved slightly to the right */
+    display: flex;
+    align-items: center;
 }
 
-/* Social buttons in top-right */
+.logo img {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;  /* Space between logo and text */
+}
+
+/* Social Buttons (Moved to Top Right & Added Icons) */
 .social-buttons {
     position: absolute;
     top: 20px;
     right: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .social-buttons a {
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
     padding: 8px 12px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.social-buttons a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.social-buttons img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
 }
 
-/* Main content styling */
+.social-buttons a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Main Content */
 .content {
     position: absolute;
     top: 50%;
@@ -52,7 +74,4 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
 }
