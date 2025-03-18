@@ -6,65 +6,24 @@ body, html {
     padding: 0;
     width: 100%;
     scroll-behavior: smooth; /* Enables smooth scrolling */
+    background: black; /* Ensures the main background is black */
 }
 
 /* ======================== */
-/* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
-/* ======================== */
-.social-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    z-index: 2;
-}
-
-/* All Icons Should Have the Same Size */
-.social-buttons img {
-    width: 24px !important;
-    height: 24px !important;
-    object-fit: contain;
-    margin-right: 5px;
-}
-
-/* Button Design */
-.social-buttons a {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 6px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-/* Hover effect */
-.social-buttons a:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* ======================== */
-/* 🔹 FIRST SECTION (HOMEPAGE) */
+/* 🔹 FIRST SECTION (HOMEPAGE BANNER) */
 /* ======================== */
 #home {
     height: 100vh; /* Full screen height */
-    background: url('images/Peace.jpg') no-repeat center center fixed;
+    background: url('images/Peace.jpg') no-repeat center center;
     background-size: cover;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    text-align: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
-/* Overlay for better readability */
+/* Overlay to make text readable */
 #home::before {
     content: "";
     position: absolute;
@@ -76,7 +35,7 @@ body, html {
     z-index: 1;
 }
 
-/* Text content in first section */
+/* Content inside #home */
 #home .content {
     position: relative;
     z-index: 2;
@@ -103,7 +62,7 @@ body, html {
 /* ======================== */
 #about {
     min-height: 100vh; /* Full screen height */
-    background: black;
+    background: black; /* Different background */
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -111,7 +70,6 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0; /* Ensures it starts right after #home */
 }
 
 /* "Who is Peace?" Title */
@@ -170,4 +128,43 @@ body, html {
     width: 50%;
     border-radius: 10px;
     max-width: 400px;
+}
+
+/* ======================== */
+/* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
+/* ======================== */
+.social-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 2;
+}
+
+/* All Icons Should Have the Same Size */
+.social-buttons img {
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+/* Button Design */
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.social-buttons a:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
