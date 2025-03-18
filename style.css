@@ -39,22 +39,35 @@ body, html {
 #home .content {
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 75%;
     text-align: center;
 }
 
 /* First Section Title */
 #home h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8); /* Stronger glow */
+    color: white;
+    margin-bottom: 15px;
 }
 
 /* First Section Paragraph */
 #home p {
-    font-size: 20px;
-    line-height: 1.6;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Highlight important text */
+.highlight {
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
 
 /* ======================== */
@@ -64,15 +77,20 @@ body, html {
     min-height: 100vh; /* Full screen height */
     background: black; /* Different background */
     color: white;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 80px 10%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 /* "Who is Peace?" Title */
+#about .text-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* Align "Who is Peace" Title */
 #about h2 {
     font-size: 40px;
     font-weight: bold;
@@ -83,7 +101,7 @@ body, html {
 .contract-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
@@ -115,19 +133,20 @@ body, html {
 
 /* X Post Image Box */
 .tweet-box {
+    flex: 1;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-/* Resize X Post */
+/* Resize & Position X Post */
 .tweet-box img {
-    width: 50%;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
-    max-width: 400px;
 }
 
 /* ======================== */
