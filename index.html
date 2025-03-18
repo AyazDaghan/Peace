@@ -45,9 +45,14 @@
         </div>
     </div>
 
-    <!-- Second Section: Who is Peace? -->
-    <div class="section" id="about">
-        <div class="about-content">
+<!-- Second Section: Who is Peace? -->
+<div class="section" id="about">
+    <div id="about-section">
+        <div class="tweet-box">
+            <h3>Origin</h3>
+            <img src="images/x-post.png" alt="Peace Token Tweet">
+        </div>
+        <div id="about-content">
             <h2>Who is Peace?</h2>
             
             <!-- Contract Addresses -->
@@ -60,21 +65,22 @@
                 </p>
             </div>
 
-            <!-- X (Twitter) Post Image -->
-            <div class="tweet-box">
-                <h3>Origin</h3>
-                <img src="images/x-post.png" alt="Peace Token Tweet">
+            <!-- Descriptive Text (Right Side) -->
+            <div id="about-text">
+                <p>Peace is a movement for unity and positivity in the crypto space. By embracing decentralization, we strive to build a strong and fair community.</p>
+                <p>Join the movement today and be part of something greater!</p>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        function copyToClipboard(id) {
-            var text = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(text);
-            alert("Copied: " + text);
-        }
-    </script>
+<script>
+    function copyToClipboard(id) {
+        var text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text);
+        alert("Copied: " + text);
+    }
+</script>
 
 </body>
 </html>
