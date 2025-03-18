@@ -9,6 +9,45 @@ body, html {
 }
 
 /* ======================== */
+/* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
+/* ======================== */
+.social-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 2;
+}
+
+/* All Icons Should Have the Same Size */
+.social-buttons img {
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+/* Button Design */
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.social-buttons a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ======================== */
 /* 🔹 FIRST SECTION (HOMEPAGE) */
 /* ======================== */
 #home {
