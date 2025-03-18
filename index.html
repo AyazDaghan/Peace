@@ -46,26 +46,45 @@
     </div>
 
 <!-- Second Section: Who is Peace? -->
+<!-- Second Section: Who is Peace? -->
 <div class="section" id="about">
-    <div id="about-section">
-        <div class="tweet-box">
-            <h3>Origin</h3>
-            <img src="images/x-post.jpg" alt="Peace Token Tweet">
-        </div>
-        <div id="about-content">
+    <div class="about-container">
+        <!-- Title and Contract Addresses Positioned Above X Post -->
+        <div class="about-header">
             <h2>Who is Peace?</h2>
             
             <!-- Contract Addresses -->
             <div class="contract-info">
-                <p>Ethereum CA: <span id="eth-contract">0x123456789ABCDEF</span>
-                    <button onclick="copyToClipboard('eth-contract')">📋 Copy</button>
+                <p>Ethereum CA: 
+                    <span class="hidden md:inline" id="eth-contract">0x123456789ABCDEF</span>
+                    <button onclick="copyToClipboard('eth-contract')" class="px-4 py-1 transform-gpu bg-black [border:1px_solid_rgba(255,255,255,.15)] [box-shadow:0_-30px_60px_-30px_#FDAE03_inset] text-sm text-white rounded-full border flex items-center justify-center space-x-2">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="h-3 w-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M384 112v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h80c0-35.29 28.71-64 64-64s64 28.71 64 64h80c26.51 0 48 21.49 48 48zM192 40c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24m96 114v-20a6 6 0 0 0-6-6H102a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h180a6 6 0 0 0 6-6z"></path>
+                        </svg>
+                        <span>Copy</span>
+                    </button>
                 </p>
-                <p>Base CA: <span id="base-contract">0x987654321FEDCBA</span>
-                    <button onclick="copyToClipboard('base-contract')">📋 Copy</button>
+                <p>Base CA: 
+                    <span class="hidden md:inline" id="base-contract">0x987654321FEDCBA</span>
+                    <button onclick="copyToClipboard('base-contract')" class="px-4 py-1 transform-gpu bg-black [border:1px_solid_rgba(255,255,255,.15)] [box-shadow:0_-30px_60px_-30px_#FDAE03_inset] text-sm text-white rounded-full border flex items-center justify-center space-x-2">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="h-3 w-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M384 112v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h80c0-35.29 28.71-64 64-64s64 28.71 64 64h80c26.51 0 48 21.49 48 48zM192 40c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24m96 114v-20a6 6 0 0 0-6-6H102a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h180a6 6 0 0 0 6-6z"></path>
+                        </svg>
+                        <span>Copy</span>
+                    </button>
                 </p>
             </div>
+        </div>
 
-            <!-- Descriptive Text (Right Side) -->
+        <!-- X Post & Description Layout -->
+        <div id="about-section">
+            <!-- X (Twitter) Post -->
+            <div class="tweet-box">
+                <h3>Origin</h3>
+                <img src="images/x-post.png" alt="Peace Token Tweet">
+            </div>
+
+            <!-- Description -->
             <div id="about-text">
                 <p>Peace is a movement for unity and positivity in the crypto space. By embracing decentralization, we strive to build a strong and fair community.</p>
                 <p>Join the movement today and be part of something greater!</p>
@@ -73,6 +92,7 @@
         </div>
     </div>
 </div>
+
 
 <script>
     function copyToClipboard(id) {
