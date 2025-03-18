@@ -212,7 +212,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     width: 100%;  /* Make it adapt to the available space */
-    max-width: 650px; /* Ensures it doesn't stretch too much */
+    max-width: 1300px; /* Ensures it doesn't stretch too much */
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1); /* Soft glow effect */
 
     margin-left: 50px; /* Moves the X post slightly to the right */
