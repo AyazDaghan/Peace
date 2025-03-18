@@ -114,7 +114,7 @@ body, html {
 /* ======================== */
 #about {
     min-height: 100vh;
-    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Neiro-style dark background */
+    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Matches Neiro's background */
     color: white;
     padding: 80px 10%;
     display: flex;
@@ -122,20 +122,10 @@ body, html {
     justify-content: space-between;
 }
 
-/* Content Wrapper for Proper Layout */
-#about-section {
-    display: flex;
-    gap: 50px; /* Space between X post & text */
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
-/* "Who is Peace?" - Styled Like Neiro */
+/* "Who is Peace?" Title - Styled like Neiro */
 #about-content {
     flex: 1;
     text-align: left;
-    max-width: 500px;
 }
 
 #about h2 {
@@ -144,7 +134,7 @@ body, html {
     color: white;
     text-align: left;
     padding-left: 10px;
-    border-bottom: 4px solid rgb(253, 174, 3); /* Adds the yellow underline */
+    border-bottom: 4px solid rgb(253, 174, 3); /* Adds yellow underline */
     display: inline-block;
 }
 
@@ -184,7 +174,15 @@ body, html {
     background: #ffdb4d;
 }
 
-/* X Post (Tweet Box) - Adjusted to Match Neiro */
+/* Layout of Tweet and Text */
+#about-section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Space between X post & text */
+    align-items: center;
+}
+
+/* X Post Box - Moves Left */
 .tweet-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -195,7 +193,7 @@ body, html {
     width: 450px; /* Adjust width */
 }
 
-/* X Post Image - Crop Sides & Resize */
+/* Resize X Post Image */
 .tweet-box img {
     width: 100%;
     height: auto;
@@ -214,6 +212,7 @@ body, html {
     text-align: left;
     max-width: 500px;
 }
+
 
 /* ======================== */
 /* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
