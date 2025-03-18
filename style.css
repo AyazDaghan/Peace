@@ -115,7 +115,7 @@ body, html {
     min-height: 100vh;
     background: rgba(255, 255, 255, 0.08);
     color: white;
-    padding: 100px 12%; /* Increased padding to shift right */
+    padding: 80px 12%; /* Decreased padding to move section up */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,7 +124,7 @@ body, html {
 .about-header {
     width: 100%;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 50px; /* Moves the title and CA's slightly to the right */
 }
 
@@ -148,6 +148,7 @@ body, html {
     border-bottom: 3px solid rgb(253, 174, 3);
     display: inline-block;
     margin-left: 50px; /* Moves title slightly right */
+    margin-top: -20px; /* Moves title up */
 }
 
 /* 🔹 Contract Addresses - Styling */
@@ -155,8 +156,8 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    who : 5px;
     margin-left: 50px; /* Moves CA's slightly to the right */
+    margin-top: -15px; /* Moves CA section up */
 }
 
 /* Contract Address Text */
@@ -168,7 +169,6 @@ body, html {
     align-items: center;
     gap: 5px;
     margin-left: 50px; /* Moves CA's slightly to the right */
-
 }
 
 /* 🔹 Copy Button - Adjustments */
@@ -212,11 +212,10 @@ body, html {
     width: 100%;  /* Make it adapt to the available space */
     max-width: 1300px; /* Ensures it doesn't stretch too much */
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1); /* Soft glow effect */
-
     margin-left: 50px; /* Moves the X post slightly to the right */
+    margin-top: -20px; /* Moves X post up */
 }
 
-/* 🔹 X Post Image - Fix Clipping Issue */
 /* 🔹 X Post Image - Adjust to Fit Properly */
 .tweet-box img {
     width: 100%;
@@ -227,11 +226,12 @@ body, html {
 
 /* Wording Next to X Post */
 #about-text {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px; /* Increased description text size */
+    line-height: 1.6; /* Improved readability */
     text-align: left;
     max-width: 450px;
     padding-left: 50px; /* Moves text slightly to the right */
+    margin-top: -20px; /* Moves text up */
 }
 
 
