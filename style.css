@@ -2,14 +2,13 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
     scroll-behavior: smooth;
 }
 
-/* Sections */
+/* Sections - Ensure correct stacking order */
 .section {
-    height: 100vh;
+    height: 100vh; /* Full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +17,27 @@ body, html {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative; /* Fix stacking issue */
 }
 
-/* Black background section */
+/* Fix for the second section */
 .black-background {
-    background: black;
+    background: black !important; /* Ensure it is fully black */
     color: white;
     padding: 50px 20px;
     text-align: center;
+}
+
+/* Ensure content is properly spaced */
+.section .content,
+.section .about-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Fix position of the "Who is Peace?" section */
+#about {
+    margin-top: 100vh; /* Push it below the first section */
 }
 
 /* Overlay to improve text readability */
@@ -101,6 +113,9 @@ body, html {
 .about-content {
     width: 80%;
     text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Add dark background for visibility */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 /* Contract Info */
