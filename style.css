@@ -90,7 +90,7 @@ body::before {
 /* Adjust Main Content Position */
 .content {
     position: absolute;
-    top: 48%; /* Move slightly downward */
+    top: 28%; /* Move slightly downward */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
