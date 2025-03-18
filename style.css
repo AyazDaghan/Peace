@@ -116,7 +116,7 @@ body, html {
     min-height: 100vh;
     background: rgba(255, 255, 255, 0.08);
     color: white;
-    padding: 100px 10%;
+    padding: 100px 12%; /* Increased padding to shift right */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,18 +135,18 @@ body, html {
     justify-content: space-between;
     gap: 40px; /* Adjusted gap */
     width: 100%;
-    transform: translateX(50px); /* Moves everything slightly to the right */
+    margin-left: 50px; /* Moves the entire section slightly right */
 }
 
 /* 🔹 "Who is Peace?" - Styling */
 #about h2 {
-    font-size: 42px; /* Increased font size */
+    font-size: 42px;
     font-weight: 700;
     color: white;
     text-align: left;
     margin-bottom: 10px;
     padding-left: 5px;
-    border-bottom: 3px solid rgb(253, 174, 3); /* Adds the yellow underline */
+    border-bottom: 3px solid rgb(253, 174, 3);
     display: inline-block;
 }
 
@@ -162,14 +162,13 @@ body, html {
 .contract-info p {
     font-size: 10px;
     font-weight: bold;
-    color: #ffcc00; /* Gold color */
+    color: #ffcc00;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 /* 🔹 Copy Button - Adjustments */
-/* Copy Button - Updated Style */
 .contract-info button {
     padding: 3px 12px;
     background: black;
@@ -178,11 +177,11 @@ body, html {
     color: white;
     font-size: 10px;
     font-weight: bold;
-    border-radius: 9999px; /* Makes it fully rounded */
+    border-radius: 9999px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -199,7 +198,6 @@ body, html {
     color: white;
 }
 
-
 /* 🔹 X Post Container */
 .tweet-box {
     background: rgba(255, 255, 255, 0.12);
@@ -208,19 +206,19 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 650px; /* Adjusted width */
-    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1); /* Soft glow effect */
-    transform: translateX(50px); /* Moves X post slightly to the right */
+    width: 550px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    margin-left: 50px; /* Moves the X post slightly to the right */
 }
 
 /* 🔹 X Post Image - Fix Clipping Issue */
 .tweet-box img {
     width: 100%;
-    height: %100;
+    height: auto;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
-    clip-path: inset(0px 10% 0px 10%); /* Reduced cropping */
+    border-radius: 10px;
+    clip-path: inset(0px 12% 0px 12%);
 }
 
 /* Wording Next to X Post */
@@ -229,10 +227,8 @@ body, html {
     line-height: 1.5;
     text-align: left;
     max-width: 450px;
-    transform: translateX(50px); /* Moves text slightly to the right */
-
+    padding-left: 50px; /* Moves text slightly to the right */
 }
-
 
 
 /* ======================== */
