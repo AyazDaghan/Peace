@@ -114,7 +114,7 @@ body, html {
 /* ======================== */
 #about {
     min-height: 100vh;
-    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Neiro-style dark background */
+    background: rgba(255, 255, 255, 0.08);
     color: white;
     padding: 100px 10%;
     display: flex;
@@ -147,7 +147,7 @@ body, html {
 .contract-info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 20px;
 }
 
@@ -162,28 +162,40 @@ body, html {
 }
 
 /* 🔹 Copy Button - Adjustments */
+/* Copy Button - Updated Style */
 .contract-info button {
-    cursor: pointer;
-    background: #ffcc00;
-    border: none;
-    padding: 4px 10px;
-    border-radius: 8px; /* Rounded corners */
+    padding: 4px 16px;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 -30px 60px -30px #FDAE03 inset;
+    color: white;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 9999px; /* Makes it fully rounded */
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    cursor: pointer;
     transition: 0.3s;
-    font-size: 14px;
 }
 
-/* Copy Button Hover Effect */
+/* Button Hover Effect */
 .contract-info button:hover {
-    background: #ffdb4d;
+    background: rgba(255, 255, 255, 0.1);
 }
+
+/* Button Icon Styling */
+.contract-info button svg {
+    height: 12px;
+    width: 12px;
+    color: white;
+}
+
 
 /* 🔹 X Post Container */
 .tweet-box {
-    background: rgba(255, 255, 255, 0.08);
+    background: black
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -202,13 +214,12 @@ body, html {
     clip-path: inset(0px 10% 0px 10%); /* Reduced cropping */
 }
 
-/* 🔹 Descriptive Text Adjustments */
+/* Wording Next to X Post */
 #about-text {
-    flex: 1;
-    font-size: 20px;
-    line-height: 1.7; /* Improved readability */
+    font-size: 16px;
+    line-height: 1.5;
     text-align: left;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 
