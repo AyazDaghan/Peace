@@ -4,27 +4,39 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
-/* Background Fix - Add subtle dark overlay */
-body {
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('images/Peace.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
-    position: relative;
+    padding: 20px;
+}
+
+/* Black background section */
+.black-background {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 /* Overlay to improve text readability */
-body::before {
+.section::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust transparency */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -35,14 +47,14 @@ body::before {
     left: 80px;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo img {
-    width: 50px; /* Adjust logo size */
+    width: 50px;
     height: 50px;
-    border-radius: 50%; /* Makes it oval */
-    object-fit: cover; /* Ensures it doesn't stretch */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo-text {
@@ -51,7 +63,7 @@ body::before {
     margin-left: 10px;
 }
 
-/* Social Buttons - Resize Icons & Align */
+/* Social Buttons */
 .social-buttons {
     position: absolute;
     top: 20px;
@@ -59,7 +71,7 @@ body::before {
     display: flex;
     gap: 10px;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .social-buttons a {
@@ -74,50 +86,58 @@ body::before {
     transition: 0.3s;
 }
 
-/* Adjusting all icons to the same size */
 .social-buttons img {
-    width: 24px !important;
-    height: 24px !important;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     margin-right: 5px;
 }
 
-/* Hover effect for better UX */
 .social-buttons a:hover {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* Adjust Main Content Position */
-.content {
-    position: absolute;
-    top: 60%; /* Move slightly downward */
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* About Section */
+.about-content {
     width: 80%;
     text-align: center;
-    z-index: 2;
+}
+
+/* Contract Info */
+.contract-info p {
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contract-info button {
+    margin-left: 10px;
+    cursor: pointer;
+    background: #ffcc00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contract-info button:hover {
+    background: #ffdb4d;
+}
+
+/* Tweet Box */
+.tweet-box {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
+    border-radius: 10px;
 }
 
-/* Improved Heading */
-.content h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
-}
-
-/* Improved Paragraph Spacing */
-.content p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6; /* Improved spacing */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-}
-
-/* Highlight important text */
-.highlight {
-    font-weight: bold;
-    color: #ffcc00; /* Gold color to make it pop */
+.tweet-box img {
+    width: 80%;
+    border-radius: 10px;
+    max-width: 600px;
 }
