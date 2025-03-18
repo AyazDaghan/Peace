@@ -114,7 +114,7 @@ body, html {
 /* ======================== */
 #about {
     min-height: 100vh;
-    background: rgb(23 23 23 / var(--tw-bg-opacity));
+    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Neiro-style dark background */
     color: white;
     padding: 80px 10%;
     display: flex;
@@ -122,18 +122,30 @@ body, html {
     justify-content: space-between;
 }
 
+/* Content Wrapper for Proper Layout */
+#about-section {
+    display: flex;
+    gap: 50px; /* Space between X post & text */
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
 
-
-/* "Who is Peace?" - Aligned Left */
+/* "Who is Peace?" - Styled Like Neiro */
 #about-content {
     flex: 1;
     text-align: left;
+    max-width: 500px;
 }
 
 #about h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 4px solid rgb(253, 174, 3); /* Adds the yellow underline */
+    display: inline-block;
 }
 
 /* Contract Addresses - Styled like Neiro */
@@ -172,14 +184,7 @@ body, html {
     background: #ffdb4d;
 }
 
-/* X Post & Description Layout */
-#about-section {
-    display: flex;
-    gap: 50px; /* Space between X post & text */
-    align-items: center;
-}
-
-/* X Post Box - Moved Left */
+/* X Post (Tweet Box) - Adjusted to Match Neiro */
 .tweet-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -190,8 +195,7 @@ body, html {
     width: 450px; /* Adjust width */
 }
 
-/* Resize X Post Image */
-/* Crop X Post Image */
+/* X Post Image - Crop Sides & Resize */
 .tweet-box img {
     width: 100%;
     height: auto;
@@ -202,7 +206,6 @@ body, html {
     clip-path: inset(0px 15% 0px 15%); /* Cuts left & right sides */
 }
 
-
 /* Descriptive Text (Right Side) */
 #about-text {
     flex: 1;
@@ -211,7 +214,6 @@ body, html {
     text-align: left;
     max-width: 500px;
 }
-
 
 /* ======================== */
 /* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
