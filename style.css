@@ -113,14 +113,16 @@ body, html {
 /* 🔹 SECOND SECTION (Who is Peace?) - Neiro Style */
 /* ======================== */
 #about {
-    min-height: 100vh; /* Full screen height */
-    background: black; /* Different background */
+    min-height: 100vh;
+    background: rgb(23 23 23 / var(--tw-bg-opacity));
     color: white;
     padding: 80px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 /* "Who is Peace?" - Aligned Left */
 #about-content {
@@ -189,10 +191,17 @@ body, html {
 }
 
 /* Resize X Post Image */
+/* Crop X Post Image */
 .tweet-box img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
+    overflow: hidden;
+    clip-path: inset(0px 15% 0px 15%); /* Cuts left & right sides */
 }
+
 
 /* Descriptive Text (Right Side) */
 #about-text {
