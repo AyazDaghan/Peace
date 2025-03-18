@@ -115,7 +115,7 @@ body, html {
     min-height: 100vh;
     background: rgba(255, 255, 255, 0.08);
     color: white;
-    padding: 80px 12%; /* Decreased padding to move section up */
+    padding: 80px 12%; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,7 +124,7 @@ body, html {
 .about-header {
     width: 100%;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 20px; /* Increased gap */
     margin-left: 50px; /* Moves the title and CA's slightly to the right */
 }
 
@@ -155,14 +155,14 @@ body, html {
 .contract-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px; /* Increased gap between Solana CA and X post */
     margin-left: 50px; /* Moves CA's slightly to the right */
     margin-top: -15px; /* Moves CA section up */
 }
 
 /* Contract Address Text */
 .contract-info p {
-    font-size: 10px;
+    font-size: 14px; /* Increased Solana CA size */
     font-weight: bold;
     color: #ffcc00;
     display: flex;
@@ -173,12 +173,12 @@ body, html {
 
 /* 🔹 Copy Button - Adjustments */
 .contract-info button {
-    padding: 3px 12px;
+    padding: 5px 14px;
     background: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 -30px 60px -30px #FDAE03 inset;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 9999px;
     display: flex;
@@ -196,8 +196,8 @@ body, html {
 
 /* Button Icon Styling */
 .contract-info button svg {
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     color: white;
 }
 
@@ -226,13 +226,14 @@ body, html {
 
 /* Wording Next to X Post */
 #about-text {
-    font-size: 18px; /* Increased description text size */
-    line-height: 1.6; /* Improved readability */
+    font-size: 20px; /* Increased description text size */
+    line-height: 1.8; /* Improved readability */
     text-align: left;
-    max-width: 450px;
+    max-width: 500px;
     padding-left: 50px; /* Moves text slightly to the right */
     margin-top: -20px; /* Moves text up */
 }
+
 
 
 /* ======================== */
