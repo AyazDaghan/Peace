@@ -110,32 +110,35 @@ body, html {
 }
 
 /* ======================== */
-/* 🔹 SECOND SECTION (Who is Peace?) */
+/* 🔹 SECOND SECTION (Who is Peace?) - Neiro Style */
 /* ======================== */
 #about {
     min-height: 100vh; /* Full screen height */
     background: black; /* Different background */
     color: white;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 80px 10%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-/* "Who is Peace?" Title */
+/* "Who is Peace?" - Aligned Left */
+#about-content {
+    flex: 1;
+    text-align: left;
+}
+
 #about h2 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* Contract Info */
+/* Contract Addresses - Styled like Neiro */
 .contract-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
     margin-bottom: 30px;
 }
 
@@ -145,8 +148,10 @@ body, html {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 5px;
-    display: inline-block;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
 }
 
 /* Copy Button */
@@ -165,7 +170,14 @@ body, html {
     background: #ffdb4d;
 }
 
-/* X Post Image Box */
+/* X Post & Description Layout */
+#about-section {
+    display: flex;
+    gap: 50px; /* Space between X post & text */
+    align-items: center;
+}
+
+/* X Post Box - Moved Left */
 .tweet-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -173,14 +185,24 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 450px; /* Adjust width */
 }
 
-/* Resize X Post */
+/* Resize X Post Image */
 .tweet-box img {
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
-    max-width: 400px;
 }
+
+/* Descriptive Text (Right Side) */
+#about-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 500px;
+}
+
 
 /* ======================== */
 /* 🔹 SOCIAL MEDIA ICONS - FIXED SIZES */
