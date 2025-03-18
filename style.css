@@ -204,24 +204,25 @@ body, html {
 /* 🔹 X Post Container */
 .tweet-box {
     background: rgba(255, 255, 255, 0.12);
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 550px;
-    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    width: 100%;  /* Make it adapt to the available space */
+    max-width: 650px; /* Ensures it doesn't stretch too much */
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+
     margin-left: 50px; /* Moves the X post slightly to the right */
 }
 
 /* 🔹 X Post Image - Fix Clipping Issue */
+/* 🔹 X Post Image - Adjust to Fit Properly */
 .tweet-box img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;  /* Ensures the full image is visible */
     border-radius: 10px;
-    clip-path: inset(0px 12% 0px 12%);
 }
 
 /* Wording Next to X Post */
