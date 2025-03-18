@@ -28,11 +28,11 @@ body::before {
     z-index: 1;
 }
 
-/* Logo Positioning */
+/* Make Peace Logo Oval */
 .logo {
     position: absolute;
     top: 20px;
-    left: 80px;  /* Moved slightly to the right */
+    left: 80px;
     display: flex;
     align-items: center;
     z-index: 2;
@@ -41,6 +41,8 @@ body::before {
 .logo img {
     width: 50px; /* Adjust logo size */
     height: 50px;
+    border-radius: 50%; /* Makes it oval */
+    object-fit: cover; /* Ensures it doesn't stretch */
 }
 
 .logo-text {
@@ -72,24 +74,23 @@ body::before {
     transition: 0.3s;
 }
 
-/* Force all social media icons to be the same small size */
+/* Adjusting all icons to the same size */
 .social-buttons img {
-    width: 20px !important; /* Forces smaller size */
-    height: 20px !important;
+    width: 24px !important;
+    height: 24px !important;
     object-fit: contain;
     margin-right: 5px;
 }
-
 
 /* Hover effect for better UX */
 .social-buttons a:hover {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* Main Content - Improve Readability & Centering */
+/* Adjust Main Content Position */
 .content {
     position: absolute;
-    top: 50%;
+    top: 58%; /* Move slightly downward */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -100,22 +101,22 @@ body::before {
 
 /* Improved Heading */
 .content h1 {
-    font-size: 50px; /* Increase heading size */
+    font-size: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Improved Paragraphs */
+/* Improved Paragraph Spacing */
 .content p {
-    font-size: 20px; /* Increase paragraph size */
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.5; /* Improve spacing */
+    line-height: 1.6; /* Improved spacing */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
 }
 
-/* Highlight the important text */
+/* Highlight important text */
 .highlight {
     font-weight: bold;
     color: #ffcc00; /* Gold color to make it pop */
