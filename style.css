@@ -116,7 +116,7 @@ body, html {
     min-height: 100vh;
     background: rgba(255, 255, 255, 0.08);
     color: white;
-    padding: 80px 12%;
+    padding: 100px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -208,7 +208,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 550px; /* Adjusted width */
+    width: 650px; /* Adjusted width */
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1); /* Soft glow effect */
     transform: translateX(50px); /* Moves X post slightly to the right */
 }
@@ -216,11 +216,11 @@ body, html {
 /* 🔹 X Post Image - Fix Clipping Issue */
 .tweet-box img {
     width: 100%;
-    height: auto;
+    height: %100;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
-    clip-path: inset(0px 12% 0px 12%); /* Reduced cropping */
+    border-radius: 12px;
+    clip-path: inset(0px 10% 0px 10%); /* Reduced cropping */
 }
 
 /* Wording Next to X Post */
