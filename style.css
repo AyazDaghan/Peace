@@ -1,10 +1,17 @@
-/* Reset margin and padding */
+/* ======================== */
+/* 🔹 General Styling Fixes */
+/* ======================== */
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
+
+/* ======================== */
+/* 🔹 FIRST SECTION (HOMEPAGE) */
+/* ======================== */
 
 /* Background Fix - Add subtle dark overlay */
 body {
@@ -24,7 +31,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust transparency */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -39,10 +46,10 @@ body::before {
 }
 
 .logo img {
-    width: 50px; /* Adjust logo size */
+    width: 50px;
     height: 50px;
-    border-radius: 50%; /* Makes it oval */
-    object-fit: cover; /* Ensures it doesn't stretch */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo-text {
@@ -90,7 +97,7 @@ body::before {
 /* Adjust Main Content Position */
 .content {
     position: absolute;
-    top: 60%; /* Move slightly downward */
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -111,7 +118,7 @@ body::before {
 .content p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.6; /* Improved spacing */
+    line-height: 1.6;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
 }
@@ -119,11 +126,15 @@ body::before {
 /* Highlight important text */
 .highlight {
     font-weight: bold;
-    color: #ffcc00; /* Gold color to make it pop */
+    color: #ffcc00;
 }
-/* === FIX WHITE SCREEN ISSUE & ADD SMOOTH TRANSITION === */
+
+/* ======================== */
+/* 🔹 SECOND SECTION (Who is Peace?) */
+/* ======================== */
+
 #about {
-    background: black !important; /* Ensure the second section has a black background */
+    background: black;
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -134,7 +145,7 @@ body::before {
     justify-content: center;
 }
 
-/* === "Who is Peace?" Title Styling === */
+/* "Who is Peace?" Title */
 .about-content h2 {
     font-size: 40px;
     font-weight: bold;
@@ -142,7 +153,7 @@ body::before {
     margin-bottom: 20px;
 }
 
-/* === Contract Info Section === */
+/* Contract Info */
 .contract-info {
     display: flex;
     flex-direction: column;
@@ -160,7 +171,7 @@ body::before {
     margin: 10px 0;
 }
 
-/* === Copy Button Styling === */
+/* Copy Button */
 .contract-info button {
     margin-left: 10px;
     cursor: pointer;
@@ -176,7 +187,7 @@ body::before {
     background: #ffdb4d;
 }
 
-/* === X Post Image Box === */
+/* X Post Image Box */
 .tweet-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -186,15 +197,14 @@ body::before {
     align-items: center;
 }
 
-/* === Resize X Post === */
+/* Resize X Post */
 .tweet-box img {
-    width: 50%; /* Decrease size */
+    width: 50%;
     border-radius: 10px;
-    max-width: 400px; /* Ensure it doesn't stretch too much */
+    max-width: 400px;
 }
 
-/* === Smooth Scroll Fix === */
+/* Smooth Scroll Fix */
 html {
     scroll-behavior: smooth;
 }
-
