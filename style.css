@@ -110,108 +110,107 @@ body, html {
 }
 
 /* ======================== */
-/* 🔹 SECOND SECTION (Who is Peace?) - Neiro Style */
+/* 🔹 SECOND SECTION (Who is Peace?) - Neiro Inspired */
 /* ======================== */
 #about {
     min-height: 100vh;
-    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Matches Neiro's background */
+    background: rgb(23 23 23 / var(--tw-bg-opacity)); /* Neiro-style dark background */
     color: white;
-    padding: 80px 10%;
+    padding: 100px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* "Who is Peace?" Title - Styled like Neiro */
-#about-content {
-    flex: 1;
-    text-align: left;
+/* Layout adjustments for section */
+#about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Adjusted gap */
+    width: 100%;
 }
 
+/* 🔹 "Who is Peace?" - Styling */
 #about h2 {
-    font-size: 48px;
+    font-size: 48px; /* Increased font size */
     font-weight: 700;
     color: white;
     text-align: left;
-    padding-left: 10px;
-    border-bottom: 4px solid rgb(253, 174, 3); /* Adds yellow underline */
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 4px solid rgb(253, 174, 3); /* Adds the yellow underline */
     display: inline-block;
 }
 
-/* Contract Addresses - Styled like Neiro */
+/* 🔹 Contract Addresses - Styling */
 .contract-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+/* Contract Address Text */
 .contract-info p {
     font-size: 18px;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 5px;
+    color: #ffcc00; /* Gold color */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: fit-content;
+    gap: 10px;
 }
 
-/* Copy Button */
+/* 🔹 Copy Button - Adjustments */
 .contract-info button {
-    margin-left: 10px;
     cursor: pointer;
     background: #ffcc00;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 4px 10px;
+    border-radius: 8px; /* Rounded corners */
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     transition: 0.3s;
+    font-size: 14px;
 }
 
+/* Copy Button Hover Effect */
 .contract-info button:hover {
     background: #ffdb4d;
 }
 
-/* Layout of Tweet and Text */
-#about-section {
-    display: flex;
-    flex-direction: row;
-    gap: 50px; /* Space between X post & text */
-    align-items: center;
-}
-
-/* X Post Box - Moves Left */
+/* 🔹 X Post Container */
 .tweet-box {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px; /* Adjust width */
+    width: 500px; /* Adjusted width */
 }
 
-/* Resize X Post Image */
+/* 🔹 X Post Image - Fix Clipping Issue */
 .tweet-box img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    overflow: hidden;
-    clip-path: inset(0px 15% 0px 15%); /* Cuts left & right sides */
+    clip-path: inset(0px 10% 0px 10%); /* Reduced cropping */
 }
 
-/* Descriptive Text (Right Side) */
+/* 🔹 Descriptive Text Adjustments */
 #about-text {
     flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.7; /* Improved readability */
     text-align: left;
     max-width: 500px;
 }
+
 
 
 /* ======================== */
