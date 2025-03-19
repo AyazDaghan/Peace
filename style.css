@@ -234,6 +234,70 @@ body, html {
     margin-top: -10px; /* Moves text up */
 }
 
+/* ======================== */
+/* 🔹 THIRD SECTION (On-Chain Stats) */
+/* ======================== */
+#stats-section {
+    min-height: 100vh;
+    background: url('/Gkk4nBuXUAApn-J.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+}
+
+/* Main Frame */
+.stats-container {
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+.stats-container h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stats Flexbox */
+.stats-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual Stat Box */
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Numbers */
+.stat-box h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Labels */
+.stat-box p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 
 
 /* ======================== */
