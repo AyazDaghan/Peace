@@ -55,6 +55,8 @@ body, html {
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8); /* Subtle Glow */
     who : 15px;
     letter-spacing: 1.2px; /* Better Spacing */
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -66,6 +68,8 @@ body, html {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     max-width: 80%;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .highlight {
@@ -84,6 +88,8 @@ body, html {
     text-align: center;
     z-index: 2;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Improved Heading */
@@ -91,6 +97,8 @@ body, html {
     font-size: 80px;
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Improved Paragraph Spacing */
@@ -100,6 +108,8 @@ body, html {
     line-height: 1.6; /* Improved spacing */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Highlight important text */
@@ -332,6 +342,7 @@ body, html {
     color: white;
     font-weight: bold;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Hover effect */
@@ -363,4 +374,5 @@ body, html {
     color: white;
     font-weight: bold;
     margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
