@@ -229,7 +229,7 @@ body, html {
     font-size: 24px; /* Increased description text size */
     line-height: 1; /* Improved readability */
     text-align: left;
-    max-width: 680px;
+    max-width: 600px;
     padding-left: 50px; /* Moves text slightly to the right */
     margin-top: -30px; /* Moves text up */
 }
